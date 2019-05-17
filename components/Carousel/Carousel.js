@@ -9,13 +9,11 @@
 
 class Carousel {
   constructor(obj) {
-    this.obj = obj.carousel;
+    //   obj is undefined
     this.left = document.querySelector("left-button");
     this.right = document.querySelector("right-button");
     this.images = document.querySelectorAll(".carImg");
-    this.index = document.querySelector(
-      `.carImg[data-index="${this.tabElement.dataset.index}"]`
-    );
+    console.log(this.images);
   }
 }
 
